@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <link rel="stylesheet" href="css/my-app.css">
+
+    <style type="text/css">
+        #player {
+            padding: 10px;
+            border: 5px solid black;
+            border-radius: 15px;
+            box-shadow: 10px 10px 5px gray;
+            box-sizing: content-box;
+            max-width: 455px;
+        }
+        
+        #positionview {
+            width: 400px;
+            height: 40px;
+        }
+        
+        #transportbar {
+            height: 20px;
+            width: 300px;
+            position: relative;
+            float: left;
+            border: 2px solid black;
+        }
+        
+        #position {
+            background: #D7BC28;
+            height: 20px;
+            width: 0px;
+        }
+        
+        #time {
+            position: relative;
+            float: right;
+        }
+        
+        #video {
+            position: relative;
+            float: left;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #volumecontrol {
+            position: relative;
+            float: right;
+            padding-left: 20px;
+        }
+        
+        #volumebar {
+            position: relative;
+            height: 225px;
+            width: 25px;
+            border: 2px solid black;
+        }
+        
+        #volume {
+            position: absolute;
+            height: 225px;
+            width: 25px;
+            background: #006;
+        }
+        
+        #volume.disabled {
+            background: #ccc;
+        }
+        
+        #controls div {
+            display: inline;
+        }
+        
+        #controls div input {
+            background: url(buttons.png) no-repeat top left;
+            border: none;
+            height: 60px;
+            width: 60px;
+            padding: 5px;
+            display: inline-block;
+        }
+        
+        #controls div #repeat {
+            background-position: 0 -901px;
+        }
+        
+        #controls div #stop {
+            background-position: 0 -301px;
+        }
+        
+        #controls div #louder {
+            background-position: 0 -451px;
+        }
+        
+        #controls div #quieter {
+            background-position: 0 -601px;
+        }
+        
+        #controls div #mute {
+            background-position: 0 -751px;
+        }
+    </style>
+
+    <script src="cordova.js"></script>
+</head>
+
+<body class="theme-pink">
+    <div class="views tabs toolbar-through">
+
+        <div id="view-1" class="view view-main tab active">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center sliding">J U K E B O X</div>
+                    <div class="right">
+                        <a href="#" class="link icon-only">
+                            <i class="f7-icons">money_dollar_fill</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pages navbar-through">
+                <div data-page="index-1" class="page">
+                    <form class="searchbar searchbar-init">
+                        <div class="searchbar-input">
+                            <input type="search" placeholder="Search Clips">
+                            <a href="#" class="searchbar-clear"></a>
+                        </div><a href="#" class="searchbar-cancel">Cancel</a>
+                    </form>
+                    <div class="page-content">
+                        <div class="content-block-title">
+                            POPULAR CLIPS >
+                        </div>
+                        <div class="swiper-container swiper-3 swiper-init">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/beyonce.png" /></div>
+                                <div class="swiper-slide"><img src="images/ladygaga.png" /></div>
+                                <div class="swiper-slide"><img src="images/kaynewest.png" /></div>
+                            </div>
+                        </div>
+                        <div class="content-block-title">Categories</div>
+                        <div class="list-block media-list">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><img src="http://lorempixel.com/88/88/fashion/1" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">Yellow Submarine</div>
+                                            </div>
+                                            <div class="item-subtitle">Beatles</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="http://lorempixel.com/88/88/fashion/2" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">Don't Stop Me Now</div>
+                                            </div>
+                                            <div class="item-subtitle">Queen</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><img src="http://lorempixel.com/88/88/fashion/3" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">Billie Jean</div>
+                                            </div>
+                                            <div class="item-subtitle">Michael Jackson</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><img src="http://lorempixel.com/88/88/fashion/1" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">Yellow Submarine</div>
+                                            </div>
+                                            <div class="item-subtitle">Beatles</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="http://lorempixel.com/88/88/fashion/2" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">Don't Stop Me Now</div>
+                                            </div>
+                                            <div class="item-subtitle">Queen</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><img src="http://lorempixel.com/88/88/fashion/3" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">Billie Jean</div>
+                                            </div>
+                                            <div class="item-subtitle">Michael Jackson</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><img src="http://lorempixel.com/88/88/fashion/1" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">Yellow Submarine</div>
+                                            </div>
+                                            <div class="item-subtitle">Beatles</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="http://lorempixel.com/88/88/fashion/2" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">Don't Stop Me Now</div>
+                                            </div>
+                                            <div class="item-subtitle">Queen</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><img src="http://lorempixel.com/88/88/fashion/3" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">Billie Jean</div>
+                                            </div>
+                                            <div class="item-subtitle">Michael Jackson</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="view-2" class="view tab">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a href="#" class="link icon-only">
+                            <i class="icon icon-back"></i>
+                        </a>
+                    </div>
+                    <div class="center sliding">J U K E B O X</div>
+                    <div class="right">
+                        <a href="#" class="link icon-only">
+                            <i class="f7-icons">money_dollar_fill</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pages navbar-through">
+                <div data-page="index-2" class="page">
+                    <div class="page-content">
+                        <div class="content-block-title">Trending</div>
+                        <div class="list-block media-list">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><img src="images/uptrend.png" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">"Bad Blood"</div>
+                                            </div>
+                                            <div class="item-subtitle">Taylor Swift</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="images/uptrend.png" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">"Started Fromt the Bottom"</div>
+                                            </div>
+                                            <div class="item-subtitle">Drake</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><img src="images/downtrend.png" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">"Just Dance"</div>
+                                            </div>
+                                            <div class="item-subtitle">Lady Gaga</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><img src="images/uptrend.png" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">"Bad and Boujee"</div>
+                                            </div>
+                                            <div class="item-subtitle">Migos</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="images/downtrend.png" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">"This Love..."</div>
+                                            </div>
+                                            <div class="item-subtitle">Maroon 5</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><img src="images/uptrend.png" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">"Boy Bye"</div>
+                                            </div>
+                                            <div class="item-subtitle">Beyonce</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><img src="images/uptrend.png" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">"We gon be alright!"</div>
+                                            </div>
+                                            <div class="item-subtitle">Kendrick Lamar</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="item-link item-content">
+                                        <div class="item-media"><img src="images/downtrend.png" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">"Don't Stop Me Now"</div>
+                                            </div>
+                                            <div class="item-subtitle">Queen</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media"><img src="images/uptrend.png" width="44"></div>
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">"Billie Jean"</div>
+                                            </div>
+                                            <div class="item-subtitle">Michael Jackson</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="view-3" class="view tab">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a href="#" class="link icon-only">
+                            <i class="icon icon-back"></i>
+                        </a>
+                    </div>
+                    <div class="center sliding">J U K E B O X</div>
+                    <div class="right">
+                        <a href="#" class="link icon-only">
+                            <i class="f7-icons">money_dollar_fill</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pages navbar-through">
+                <div data-page="index-3" class="page">
+                    <div class="page-content">
+                        <div>
+                            <div id="player">
+                                <div id="video">
+                                    
+                                    <video width="400" height="225" poster="images/beyonce.png">
+                                        <source src="media/spl_024.mp3" type="audio/mp3">
+                                    </video>
+                                    <div id="positionview">
+                                        <div id="transportbar">
+                                            <div id="position"></div>
+                                        </div>
+                                        <div id="time">
+                                            <span id="curTime">00:00</span>/<span id="duration">55.48</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="volumecontrol">
+                                    <div id="volumebar">
+                                        <div id="volume"></div>
+                                    </div>
+                                    <div id="vol">1.00</div>
+                                </div>
+                                <div style="clear: both;"></div>
+                                <div id="controls">
+                                    <div>
+                                        <input id="play" type="image" src="0.gif" alt="Play">
+                                    </div>
+                                    <div>
+                                        <input id="repeat" type="image" src="0.gif" alt="Repeat">
+                                    </div>
+                                    <div>
+                                        <input id="stop" type="image" src="0.gif" alt="Stop">
+                                    </div>
+                                    <div>
+                                        <input id="louder" type="image" src="0.gif" alt="Louder">
+                                    </div>
+                                    <div>
+                                        <input id="quieter" type="image" src="0.gif" alt="Quieter">
+                                    </div>
+                                    <div>
+                                        <input id="mute" type="image" src="0.gif" alt="Mute">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <progress />
+                        </div>
+                        <button>Purchase: 2 Credits</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="view-4" class="view tab">
+            <div class="pages navbar-fixed">
+                <div data-page="index-4" class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="left">
+                                <a href="#" class="link icon-only">
+                                    <i class="icon icon-back"></i>
+                                </a>
+                            </div>
+                            <div class="center sliding">Buy Credits</div>
+                            <div class="right">0 Credits</div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="content-block">
+                            <img src="" />
+                            <p>You need credits to buy and send clips.</p>
+                        </div>
+                        <div class="content-block-title">Credit Pricing</div>
+                        <div class="content-block">
+                            <div class="row">
+                                <div class="col-100"><a href="#" class="button button-big button-fill color-green">$5 - 5 credits</a></div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-100"><a href="#" class="button button-big button-fill color-purple">$10 - 11 credits</a></div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-100"><a href="#" class="button button-big button-fill color-red">$20 - 25 credits</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+                <a href="#view-1" class="tab-link active"> <i class="f7-icons">list</i><span class="tabbar-label">Home</span></a>
+                <a href="#view-2" class="tab-link"><i class="f7-icons">radio</i><span class="tabbar-label">Trending</span></a>
+                <a href="#view-3" class="tab-link"> <i class="icon tabbar-demo-icon-3"><span class="badge bg-red">4</span></i><span class="tabbar-label">Upload</span></a>
+                <a href="#view-4" class="tab-link"> <i class="f7-icons">person</i><span class="tabbar-label">Profile</span></a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript">
+        video = document.getElementsByTagName("video")[0];
+        position = document.getElementById("position");
+        curTime = document.getElementById("curTime");
+        duration = document.getElementById("duration");
+        volume = document.getElementById("volume");
+        vol = document.getElementById("vol");
+        play = document.getElementById("play");
+        repeat = document.getElementById("repeat");
+        stop = document.getElementById("stop");
+        louder = document.getElementById("louder");
+        quieter = document.getElementById("quieter");
+        mute = document.getElementById("mute");
+
+        video.addEventListener("loadedmetadata", init, false);
+
+        function init(evt) {
+            duration.innerHTML = video.duration.toFixed(2);
+            vol.innerHTML = video.volume.toFixed(2);
+        }
+
+        video.addEventListener("timeupdate", curTimeUpdate, false);
+
+        function curTimeUpdate(evt) {
+            curTime.innerHTML = video.currentTime.toFixed(2);
+            position.style.width = 300 * video.currentTime / video.duration + "px";
+        }
+
+        video.addEventListener("volumechange", dispVol, false);
+
+        function dispVol(evt) {
+            vol.innerHTML = video.volume.toFixed(2);
+        }
+
+        play.addEventListener("click", togglePlay, false);
+
+        function togglePlay(evt) {
+            if (video.paused == false) {
+                video.pause();
+                play.style.backgroundPosition = "0 0";
+            } else {
+                video.play();
+                play.style.backgroundPosition = "0 -151px";
+            }
+        }
+
+        repeat.addEventListener("click", rewind, false);
+
+        function rewind(evt) {
+            video.currentTime = video.currentTime - 2.0;
+        }
+
+        stop.addEventListener("click", restart, false);
+
+        function restart(evt) {
+            video.pause();
+            play.style.backgroundPosition = "0 0";
+            video.currentTime = 0;
+        }
+
+        louder.addEventListener("click", volInc, false);
+
+        function volInc(evt) {
+            changeVolume(video.volume + 0.1);
+        }
+
+        quieter.addEventListener("click", volDec, false);
+
+        function volDec(evt) {
+            changeVolume(video.volume - 0.1);
+        }
+
+        mute.addEventListener("click", toggleMute, false);
+
+        function toggleMute(evt) {
+            video.muted = !video.muted;
+            if (video.muted) {
+                volume.className = 'disabled';
+            } else {
+                volume.className = '';
+            }
+        }
+
+        function changeVolume(changeTo) {
+            if (video.muted) {
+                toggleMute();
+            }
+            if (changeTo > 1.0) {
+                changeTo = 1.0;
+            } else if (changeTo < 0.0) {
+                changeTo = 0.0;
+            }
+            volume.style.height = 225 * changeTo + 'px';
+            volume.style.marginTop = 225 - (225 * changeTo) + 'px';
+            video.volume = changeTo;
+        }
+    </script>
+</body>
+
+</html>
