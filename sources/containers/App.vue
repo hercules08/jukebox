@@ -5,65 +5,59 @@
     <f7-views tabbar-through navbar-through>
       <f7-tabs animated>
 
-        <f7-view id="home" tab active :dynamic-navbar="true">
+        <f7-view id="home_view" tab active :dynamic-navbar="true">
           <f7-navbar>
             <f7-nav-center>JUKEBOX</f7-nav-center>
             <f7-nav-right>
-              <f7-link>
+              <f7-link href="/buy_credits/" data-view="#home_view">
                 <img class="coins_icon">
               </f7-link>
             </f7-nav-right>
           </f7-navbar>
           <f7-pages>
-            <f7-page name="home">
-              <p>Page1 content</p>
-            </f7-page>        
+            <jb-home></jb-home>
           </f7-pages>
 
         </f7-view>
 
-        <f7-view id="trending" tab :dynamic-navbar="true">
+        <f7-view id="trending_view" tab :dynamic-navbar="true">
           <f7-navbar>
             <f7-nav-center>TRENDING</f7-nav-center>
             <f7-nav-right>
-              <f7-link>
+              <f7-link href="/buy_credits/" data-view="#trending_view">
                 <img class="coins_icon">
               </f7-link>
             </f7-nav-right>
           </f7-navbar>
           <f7-pages>
-            <f7-page name="trending">
-              <p>Page2 content</p>
-            </f7-page>        
+            <jb-trending></jb-trending>
           </f7-pages>
         </f7-view>
 
-        <f7-view id="profile" tab :dynamic-navbar="true">
+        <f7-view id="profile_view" tab :dynamic-navbar="true">
           <f7-navbar>
             <f7-nav-center>PROFILE</f7-nav-center>
             <f7-nav-right>
-              <f7-link>
+              <f7-link href="/buy_credits/" data-view="#profile_view">
                 <img class="coins_icon">
               </f7-link>
             </f7-nav-right>
           </f7-navbar>
 
           <f7-pages>
-            <f7-page name="profile">
-              <p>Page3 content</p>
-            </f7-page>        
+            <jb-profile></jb-profile>
           </f7-pages>
         </f7-view>
 
       </f7-tabs>
       <f7-toolbar tabbar>
-        <f7-link active tab-link="#home">
+        <f7-link active tab-link="#home_view">
           <img class="home_icon">
         </f7-link>
-        <f7-link tab-link="#trending">
+        <f7-link tab-link="#trending_view">
           <img class="trending_icon">
         </f7-link>
-        <f7-link tab-link="#profile">
+        <f7-link tab-link="#profile_view">
           <img class="profile_icon">
         </f7-link>
       </f7-toolbar>
@@ -74,7 +68,18 @@
 </template>
 
 <script>
-export default {};
+import Home from './Home.vue';
+import Trending from './Trending.vue';
+import Profile from './Profile.vue';
+
+export default {
+  components: {
+    'jb-home': Home,
+    'jb-profile': Profile,
+    'jb-trending': Trending,
+  },
+
+};
 </script>
 
 <style scoped>
