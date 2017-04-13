@@ -27881,7 +27881,36 @@ exports.insert = function (css) {
 }
 
 },{}],7:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".coins_icon[data-v-65263fec] {\n  width: 24px;\n  height: 24px;\n  content: url(./img/icons/coins.png);    \n}\n.home_icon[data-v-65263fec] {\n  width: 30px;\n  height: 30px;\n  content: url(./img/icons/home.png);\n}\n.active > .home_icon[data-v-65263fec] {\n  width: 30px;\n  height: 30px;\n  content: url(./img/icons/home_active.png);\n}\n\n.trending_icon[data-v-65263fec] {\n  width: 30px;\n  height: 30px;\n  content: url(./img/icons/1.png);\n}\n.active > .trending_icon[data-v-65263fec] {\n  width: 30px;\n  height: 30px;\n  content: url(./img/icons/2.png);\n}\n\n .profile_icon[data-v-65263fec] {\n  width: 30px;\n  height: 30px;\n  content: url(./img/icons/profile.png);\n}\n.active > .profile_icon[data-v-65263fec] {\n  width: 30px;\n  height: 30px;\n  content: url(./img/icons/profile_active.png);\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".fancy[data-v-783cd37a] {\n  text-align: center;\n}\n.fancy div[data-v-783cd37a] {\n  display: inline-block;\n  position: relative;\n  padding: 10px;\n  border-radius: 15px;\n  color: #ff2d55;\n  text-transform: capitalize;\n}\n.fancy div.fill[data-v-783cd37a] {\n    color: white;\n    background: #ff2d55;\n    text-transform: uppercase;\n} \n.fancy div[data-v-783cd37a]:before,\n.fancy div[data-v-783cd37a]:after {\n  content: \"\";\n  position: absolute;\n  height: 2px;\n  background: grey;\n  top: 15px;\n  width: 600px;\n}\n.fancy div[data-v-783cd37a]:before {\n  right: 100%;\n  margin-right: 15px;\n}\n.fancy div[data-v-783cd37a]:after {\n  left: 100%;\n  margin-left: 15px;\n}")
+;(function(){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  props: ['title', 'isFill']
+};
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
+var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
+if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"content-block-title"},[_c('div',{staticClass:"fancy"},[_c('div',{class:{fill: _vm.isFill}},[_vm._v(_vm._s(_vm.title))])])])}
+__vue__options__.staticRenderFns = []
+__vue__options__._scopeId = "data-v-783cd37a"
+if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  module.hot.dispose(__vueify_style_dispose__)
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-783cd37a", __vue__options__)
+  } else {
+    hotAPI.rerender("data-v-783cd37a", __vue__options__)
+  }
+})()}
+},{"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],8:[function(require,module,exports){
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".jukebox_text[data-v-65263fec] {\n  letter-spacing: 4px;\n}\n.coins_icon[data-v-65263fec] {\n  width: 24px;\n  height: 24px;\n  content: url(./img/icons/coins.png);    \n}\n.home_icon[data-v-65263fec] {\n  width: 30px;\n  height: 30px;\n  content: url(./img/icons/home.png);\n}\n.active > .home_icon[data-v-65263fec] {\n  width: 30px;\n  height: 30px;\n  content: url(./img/icons/home_active.png);\n}\n\n.trending_icon[data-v-65263fec] {\n  width: 30px;\n  height: 30px;\n  content: url(./img/icons/1.png);\n}\n.active > .trending_icon[data-v-65263fec] {\n  width: 30px;\n  height: 30px;\n  content: url(./img/icons/2.png);\n}\n\n .profile_icon[data-v-65263fec] {\n  width: 30px;\n  height: 30px;\n  content: url(./img/icons/profile.png);\n}\n.active > .profile_icon[data-v-65263fec] {\n  width: 30px;\n  height: 30px;\n  content: url(./img/icons/profile_active.png);\n}")
 ;(function(){
 'use strict';
 
@@ -27915,7 +27944,7 @@ exports.default = {
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('f7-views',{attrs:{"tabbar-through":"","navbar-through":""}},[_c('f7-tabs',{attrs:{"animated":""}},[_c('f7-view',{attrs:{"id":"home_view","tab":"","active":"","dynamic-navbar":true}},[_c('f7-navbar',[_c('f7-nav-center',[_vm._v("JUKEBOX")]),_vm._v(" "),_c('f7-nav-right',[_c('f7-link',{attrs:{"href":"/buy_credits/","data-view":"#home_view"}},[_c('img',{staticClass:"coins_icon"})])],1)],1),_vm._v(" "),_c('f7-pages',[_c('jb-home')],1)],1),_vm._v(" "),_c('f7-view',{attrs:{"id":"trending_view","tab":"","dynamic-navbar":true}},[_c('f7-navbar',[_c('f7-nav-center',[_vm._v("TRENDING")]),_vm._v(" "),_c('f7-nav-right',[_c('f7-link',{attrs:{"href":"/buy_credits/","data-view":"#trending_view"}},[_c('img',{staticClass:"coins_icon"})])],1)],1),_vm._v(" "),_c('f7-pages',[_c('jb-trending')],1)],1),_vm._v(" "),_c('f7-view',{attrs:{"id":"profile_view","tab":"","dynamic-navbar":true}},[_c('f7-navbar',[_c('f7-nav-center',[_vm._v("PROFILE")]),_vm._v(" "),_c('f7-nav-right',[_c('f7-link',{attrs:{"href":"/buy_credits/","data-view":"#profile_view"}},[_c('img',{staticClass:"coins_icon"})])],1)],1),_vm._v(" "),_c('f7-pages',[_c('jb-profile')],1)],1)],1),_vm._v(" "),_c('f7-toolbar',{attrs:{"tabbar":""}},[_c('f7-link',{attrs:{"active":"","tab-link":"#home_view"}},[_c('img',{staticClass:"home_icon"})]),_vm._v(" "),_c('f7-link',{attrs:{"tab-link":"#trending_view"}},[_c('img',{staticClass:"trending_icon"})]),_vm._v(" "),_c('f7-link',{attrs:{"tab-link":"#profile_view"}},[_c('img',{staticClass:"profile_icon"})])],1)],1)],1)}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('f7-views',{attrs:{"tabbar-through":"","navbar-through":""}},[_c('f7-tabs',{attrs:{"animated":""}},[_c('f7-view',{attrs:{"id":"home_view","tab":"","active":"","dynamic-navbar":true}},[_c('f7-navbar',[_c('f7-nav-center',[_c('span',{staticClass:"jukebox_text"},[_vm._v("JUKEBOX")])]),_vm._v(" "),_c('f7-nav-right',[_c('f7-link',{attrs:{"href":"/buy_credits/","data-view":"#home_view"}},[_c('img',{staticClass:"coins_icon"})])],1)],1),_vm._v(" "),_c('f7-pages',[_c('jb-home')],1)],1),_vm._v(" "),_c('f7-view',{attrs:{"id":"trending_view","tab":"","dynamic-navbar":true}},[_c('f7-navbar',[_c('f7-nav-center',[_vm._v("TRENDING")]),_vm._v(" "),_c('f7-nav-right',[_c('f7-link',{attrs:{"href":"/buy_credits/","data-view":"#trending_view"}},[_c('img',{staticClass:"coins_icon"})])],1)],1),_vm._v(" "),_c('f7-pages',[_c('jb-trending')],1)],1),_vm._v(" "),_c('f7-view',{attrs:{"id":"profile_view","tab":"","dynamic-navbar":true}},[_c('f7-navbar',[_c('f7-nav-center',[_vm._v("PROFILE")]),_vm._v(" "),_c('f7-nav-right',[_c('f7-link',{attrs:{"href":"/buy_credits/","data-view":"#profile_view"}},[_c('img',{staticClass:"coins_icon"})])],1)],1),_vm._v(" "),_c('f7-pages',[_c('jb-profile')],1)],1)],1),_vm._v(" "),_c('f7-toolbar',{attrs:{"tabbar":""}},[_c('f7-link',{attrs:{"active":"","tab-link":"#home_view"}},[_c('img',{staticClass:"home_icon"})]),_vm._v(" "),_c('f7-link',{attrs:{"tab-link":"#trending_view"}},[_c('img',{staticClass:"trending_icon"})]),_vm._v(" "),_c('f7-link',{attrs:{"tab-link":"#profile_view"}},[_c('img',{staticClass:"profile_icon"})])],1)],1)],1)}
 __vue__options__.staticRenderFns = []
 __vue__options__._scopeId = "data-v-65263fec"
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
@@ -27929,20 +27958,31 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.rerender("data-v-65263fec", __vue__options__)
   }
 })()}
-},{"./Home.vue":9,"./Profile.vue":10,"./Trending.vue":11,"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],8:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("hr[data-v-4cb30e8e] {\n  height: 2px;\n  background: grey;\n  border: 0;\n  width: 60%;\n}\n\n.buy_credits__logo[data-v-4cb30e8e] {\n  text-align: center;\n}\n.button__color_5credit[data-v-4cb30e8e] {\n  background: #C644FC !important;\n}\n\n.button__color_10credit[data-v-4cb30e8e] {\n  background: #EF4DB6 !important;\n}\n\n.button__color_20credit[data-v-4cb30e8e] {\n  background: #FF2D55 !important;\n}\n\n.coins_icon[data-v-4cb30e8e] {\n  width: 100px;\n  height: 100px;\n  content: url(./img/icons/coins.png);     \n}")
+},{"./Home.vue":10,"./Profile.vue":11,"./Trending.vue":12,"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],9:[function(require,module,exports){
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".buy_credits__logo[data-v-4cb30e8e] {\n  text-align: center;\n}\n.button__color_5credit[data-v-4cb30e8e] {\n  background: #C644FC !important;\n}\n\n.button__color_10credit[data-v-4cb30e8e] {\n  background: #EF4DB6 !important;\n}\n\n.button__color_20credit[data-v-4cb30e8e] {\n  background: #FF2D55 !important;\n}\n\n.coins_icon[data-v-4cb30e8e] {\n  width: 100px;\n  height: 100px;\n  content: url(./img/icons/coins.png);     \n}")
 ;(function(){
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = {};
+
+var _FancyBlockTitle = require('../components/FancyBlockTitle.vue');
+
+var _FancyBlockTitle2 = _interopRequireDefault(_FancyBlockTitle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  components: {
+    'jb-fancy-block-title': _FancyBlockTitle2.default
+  }
+};
 })()
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',[_c('f7-navbar',[_c('f7-nav-left',{attrs:{"sliding":""}},[_c('f7-link',{attrs:{"back":""}},[_c('img',{staticClass:"back_icon"})])],1),_vm._v(" "),_c('f7-nav-center',{attrs:{"sliding":""}},[_vm._v("Buy Credits")]),_vm._v(" "),_c('f7-nav-right',[_vm._v("0 Credits")])],1),_vm._v(" "),_c('f7-block',[_c('div',{staticClass:"buy_credits__logo"},[_c('img',{staticClass:"coins_icon"}),_vm._v(" "),_c('p',[_vm._v("You need credits to buy and send clips.")])])]),_vm._v(" "),_c('f7-block-title',[_vm._v("Credit Pricing")]),_vm._v(" "),_c('f7-block',[_c('p',[_c('f7-button',{staticClass:"button__color_5credit",attrs:{"big":"","fill":""}},[_vm._v("$5 - 5 credits")])],1),_vm._v(" "),_c('p',[_c('f7-button',{staticClass:"button__color_10credit",attrs:{"big":"","fill":""}},[_vm._v("$10 - 11 credits")])],1),_vm._v(" "),_c('p',[_c('f7-button',{staticClass:"button__color_20credit",attrs:{"big":"","fill":""}},[_vm._v("$20 - 25 credits")])],1)])],1)}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',[_c('f7-navbar',[_c('f7-nav-left',{attrs:{"sliding":""}},[_c('f7-link',{attrs:{"back":""}},[_c('img',{staticClass:"back_icon"})])],1),_vm._v(" "),_c('f7-nav-center',{attrs:{"sliding":""}},[_vm._v("Buy Credits")]),_vm._v(" "),_c('f7-nav-right',[_vm._v("0 Credits")])],1),_vm._v(" "),_c('f7-block',[_c('div',{staticClass:"buy_credits__logo"},[_c('img',{staticClass:"coins_icon"}),_vm._v(" "),_c('p',[_vm._v("You need credits to buy and send clips.")])])]),_vm._v(" "),_c('jb-fancy-block-title',{attrs:{"title":"Credit Pricing"}}),_vm._v(" "),_c('f7-block',{attrs:{"inset":""}},[_c('p',[_c('f7-button',{staticClass:"button__color_5credit",attrs:{"big":"","fill":""}},[_vm._v("$5 - 5 credits")])],1),_vm._v(" "),_c('p',[_c('f7-button',{staticClass:"button__color_10credit",attrs:{"big":"","fill":""}},[_vm._v("$10 - 11 credits")])],1),_vm._v(" "),_c('p',[_c('f7-button',{staticClass:"button__color_20credit",attrs:{"big":"","fill":""}},[_vm._v("$20 - 25 credits")])],1)])],1)}
 __vue__options__.staticRenderFns = []
 __vue__options__._scopeId = "data-v-4cb30e8e"
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
@@ -27956,20 +27996,33 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.rerender("data-v-4cb30e8e", __vue__options__)
   }
 })()}
-},{"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],9:[function(require,module,exports){
+},{"../components/FancyBlockTitle.vue":7,"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],10:[function(require,module,exports){
 ;(function(){
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = {};
+
+var _FancyBlockTitle = require('../components/FancyBlockTitle.vue');
+
+var _FancyBlockTitle2 = _interopRequireDefault(_FancyBlockTitle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  components: {
+    'jb-fancy-block-title': _FancyBlockTitle2.default
+  }
+
+};
 })()
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',[_c('span',[_vm._v("Home")])])}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',[_c('jb-fancy-block-title',{attrs:{"title":"Hello world!","isFill":true}})],1)}
 __vue__options__.staticRenderFns = []
+__vue__options__._scopeId = "data-v-40a8eab8"
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
@@ -27980,7 +28033,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.rerender("data-v-40a8eab8", __vue__options__)
   }
 })()}
-},{"vue":5,"vue-hot-reload-api":4}],10:[function(require,module,exports){
+},{"../components/FancyBlockTitle.vue":7,"vue":5,"vue-hot-reload-api":4}],11:[function(require,module,exports){
 ;(function(){
 "use strict";
 
@@ -28004,7 +28057,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.rerender("data-v-22258c18", __vue__options__)
   }
 })()}
-},{"vue":5,"vue-hot-reload-api":4}],11:[function(require,module,exports){
+},{"vue":5,"vue-hot-reload-api":4}],12:[function(require,module,exports){
 ;(function(){
 "use strict";
 
@@ -28028,7 +28081,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.rerender("data-v-dde98d2c", __vue__options__)
   }
 })()}
-},{"vue":5,"vue-hot-reload-api":4}],12:[function(require,module,exports){
+},{"vue":5,"vue-hot-reload-api":4}],13:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -28116,7 +28169,7 @@ var AppCordova = function () {
 var appCordova = new AppCordova();
 appCordova.initialize();
 
-},{"./containers/App.vue":7,"./routes":13,"framework7":2,"framework7-vue":1,"vue":5}],13:[function(require,module,exports){
+},{"./containers/App.vue":8,"./routes":14,"framework7":2,"framework7-vue":1,"vue":5}],14:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -28134,4 +28187,4 @@ exports.default = [{
   component: _BuyCredits2.default
 }];
 
-},{"./containers/BuyCredits.vue":8}]},{},[12]);
+},{"./containers/BuyCredits.vue":9}]},{},[13]);

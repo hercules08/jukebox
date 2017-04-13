@@ -18,9 +18,10 @@
     </f7-block>
 
 
-    <f7-block-title>Credit Pricing</f7-block-title>
+    <jb-fancy-block-title title="Credit Pricing"></jb-fancy-block-title>
 
-    <f7-block>
+
+    <f7-block inset>
       <p><f7-button big  class="button__color_5credit" fill>$5 - 5 credits</f7-button></p>
       <p><f7-button big  class="button__color_10credit" fill>$10 - 11 credits</f7-button></p>
       <p><f7-button big  class="button__color_20credit" fill>$20 - 25 credits</f7-button></p>
@@ -30,16 +31,15 @@
 </template>
 
 <script>
+import FancyBlockTitle from '../components/FancyBlockTitle.vue';
 
-export default {};
+export default {
+  components: {
+    'jb-fancy-block-title': FancyBlockTitle,
+  },
+};
 </script>
 <style scoped>
-hr {
-  height: 2px;
-  background: grey;
-  border: 0;
-  width: 60%;
-}
 
 .buy_credits__logo {
   text-align: center;

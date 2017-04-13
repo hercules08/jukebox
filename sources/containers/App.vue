@@ -7,7 +7,7 @@
 
         <f7-view id="home_view" tab active :dynamic-navbar="true">
           <f7-navbar>
-            <f7-nav-center>JUKEBOX</f7-nav-center>
+            <f7-nav-center><span class="jukebox_text">JUKEBOX</span></f7-nav-center>
             <f7-nav-right>
               <f7-link href="/buy_credits/" data-view="#home_view">
                 <img class="coins_icon">
@@ -83,6 +83,9 @@ export default {
 </script>
 
 <style scoped>
+  .jukebox_text {
+    letter-spacing: 4px;
+  }
   .coins_icon {
     width: 24px;
     height: 24px;
