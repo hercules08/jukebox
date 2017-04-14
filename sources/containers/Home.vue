@@ -1,5 +1,5 @@
 <template>
-  <f7-page>
+  <f7-page name="home">
     <f7-searchbar
       cancel-link="Cancel"
       placeholder="Search clips"
@@ -7,35 +7,64 @@
     ></f7-searchbar>
 
     <f7-block-title>POPULAR CLIPS</f7-block-title>
-    <f7-block>
-      <f7-grid class="popular_clips__content_center">
-        <f7-col width="33">
-          <div class="popular_clips__image-block">
-            <img width="100%" src="./img/data/pop_imgres1.png" class="">
-            <f7-link class="play_button"></f7-link>
-          </div>
-          <p class="popular_clips__title_black">Crazy in Love</p>
-          <p>Beyonce</p>
-        </f7-col>
-        <f7-col width="33">
-          <div class="popular_clips__image-block">
-            <img width="100%" src="./img/data/pop_imgres2.png" class="">
-            <f7-link class="play_button"></f7-link>
-          </div>
-          <p class="popular_clips__title_black">Just Dance</p>
-          <p>Lady Gaga</p>
-        </f7-col>
-        <f7-col width="33">
-          <div class="popular_clips__image-block">
-            <img width="100%" src="./img/data/pop_imgres3.png" class="">
-            <f7-link class="play_button"></f7-link>
-          </div>
-          <p class="popular_clips__title_black">All Falls Down</p>
-          <p>KanYe West</p>
 
-        </f7-col>
-      </f7-grid> 
-    </f7-block>
+    <f7-block>
+      <div 
+        class="swiper-container swiper-3 swiper-init" 
+        data-swiper='{"slidesPerView": "3"}'
+      >
+        <div class="swiper-wrapper popular_clips__content_center">
+          <div class="swiper-slide">
+            <div class="popular_clips__image-block">
+              <img width="100%" src="./img/data/pop_imgres1.png" class="">
+              <f7-link class="play_button"></f7-link>
+            </div>
+            <p class="popular_clips__title_black">Crazy in Love</p>
+            <p>Beyonce</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="popular_clips__image-block">
+              <img width="100%" src="./img/data/pop_imgres2.png" class="">
+              <f7-link class="play_button"></f7-link>
+            </div>
+            <p class="popular_clips__title_black">Just Dance</p>
+            <p>Lady Gaga</p>              
+          </div>
+          <div class="swiper-slide">
+            <div class="popular_clips__image-block">
+              <img width="100%" src="./img/data/pop_imgres3.png" class="">
+              <f7-link class="play_button"></f7-link>
+            </div>
+            <p class="popular_clips__title_black">All Falls Down</p>
+            <p>KanYe West</p>              
+          </div>
+          <div class="swiper-slide">
+            <div class="popular_clips__image-block">
+              <img width="100%" src="./img/data/pop_imgres1.png" class="">
+              <f7-link class="play_button"></f7-link>
+            </div>
+            <p class="popular_clips__title_black">Crazy in Love</p>
+            <p>Beyonce</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="popular_clips__image-block">
+              <img width="100%" src="./img/data/pop_imgres2.png" class="">
+              <f7-link class="play_button"></f7-link>
+            </div>
+            <p class="popular_clips__title_black">Just Dance</p>
+            <p>Lady Gaga</p>              
+          </div>
+          <div class="swiper-slide">
+            <div class="popular_clips__image-block">
+              <img width="100%" src="./img/data/pop_imgres3.png" class="">
+              <f7-link class="play_button"></f7-link>
+            </div>
+            <p class="popular_clips__title_black">All Falls Down</p>
+            <p>KanYe West</p>              
+          </div>          
+        </div>
+      </div>  
+    </f7-block> 
 
     <jb-fancy-block-title 
       title="Categories"
@@ -45,7 +74,7 @@
       <f7-list media-list>
         <f7-list-item
           link="#"
-          media="<img width='100px' src='./img/data/cat_imgres1.png'>"
+          media="<img width='80px' src='./img/data/cat_imgres1.png'>"
           title="Hip Hop"
           subtitle="10 Artists"
           class="category__title_font"
@@ -53,7 +82,7 @@
 
         <f7-list-item
           link="#"
-          media="<img width='100px' src='./img/data/cat_imgres2.png'>"
+          media="<img width='80px'src='./img/data/cat_imgres2.png'>"
           title="Pop"
           subtitle="10 Artists"
           class="category__title_font"
@@ -61,7 +90,7 @@
 
         <f7-list-item
           link="#"
-          media="<img width='100px' src='./img/data/cat_imgres3.png'>"
+          media="<img width='80px' src='./img/data/cat_imgres3.png'>"
           title="R&B"
           subtitle="10 Clips"
           class="category__title_font"
@@ -83,6 +112,7 @@ export default {
 };
 </script>
 <style scoped>
+
   .category__title_font {
     font-size: 40px;
   } 
@@ -98,6 +128,7 @@ export default {
   }
   .popular_clips__image-block {
     position: relative;
+    margin: 0 3px;
   }
   .play_button {
     width: 50px;
