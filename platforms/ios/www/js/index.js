@@ -27881,7 +27881,7 @@ exports.insert = function (css) {
 }
 
 },{}],7:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".fancy[data-v-783cd37a] {\n  text-align: center;\n}\n.fancy div[data-v-783cd37a] {\n  display: inline-block;\n  position: relative;\n  padding: 10px;\n  border-radius: 15px;\n  color: #ff2d55;\n  text-transform: capitalize;\n}\n.fancy div.fill[data-v-783cd37a] {\n    color: white;\n    background: #ff2d55;\n    text-transform: uppercase;\n} \n.fancy div[data-v-783cd37a]:before,\n.fancy div[data-v-783cd37a]:after {\n  content: \"\";\n  position: absolute;\n  height: 2px;\n  background: grey;\n  top: 15px;\n  width: 600px;\n}\n.fancy div[data-v-783cd37a]:before {\n  right: 100%;\n  margin-right: 15px;\n}\n.fancy div[data-v-783cd37a]:after {\n  left: 100%;\n  margin-left: 15px;\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".fancy[data-v-783cd37a] {\n  text-align: center;\n}\n.fancy div[data-v-783cd37a] {\n  display: inline-block;\n  position: relative;\n  padding: 5px;\n  font-size: 20px;\n  border-radius: 15px;\n  color: #ff2d55;\n  text-transform: capitalize;\n}\n.fancy div.fill[data-v-783cd37a] {\n    color: white;\n    background: #ff2d55;\n    text-transform: uppercase;\n    padding: 10px;\n    font-size: 14px;\n} \n.fancy div[data-v-783cd37a]:before,\n.fancy div[data-v-783cd37a]:after {\n  content: \"\";\n  position: absolute;\n  height: 2px;\n  background: grey;\n  top: 15px;\n  width: 600px;\n}\n.fancy div[data-v-783cd37a]:before {\n  right: 100%;\n  margin-right: 15px;\n}\n.fancy div[data-v-783cd37a]:after {\n  left: 100%;\n  margin-left: 15px;\n}")
 ;(function(){
 'use strict';
 
@@ -27944,7 +27944,7 @@ exports.default = {
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('f7-views',{attrs:{"tabbar-through":"","navbar-through":""}},[_c('f7-tabs',{attrs:{"animated":""}},[_c('f7-view',{attrs:{"id":"home_view","tab":"","active":"","dynamic-navbar":true}},[_c('f7-navbar',[_c('f7-nav-center',[_c('span',{staticClass:"jukebox_text"},[_vm._v("JUKEBOX")])]),_vm._v(" "),_c('f7-nav-right',[_c('f7-link',{attrs:{"href":"/buy_credits/","data-view":"#home_view"}},[_c('img',{staticClass:"coins_icon"})])],1)],1),_vm._v(" "),_c('f7-pages',[_c('jb-home')],1)],1),_vm._v(" "),_c('f7-view',{attrs:{"id":"trending_view","tab":"","dynamic-navbar":true}},[_c('f7-navbar',[_c('f7-nav-center',[_vm._v("TRENDING")]),_vm._v(" "),_c('f7-nav-right',[_c('f7-link',{attrs:{"href":"/buy_credits/","data-view":"#trending_view"}},[_c('img',{staticClass:"coins_icon"})])],1)],1),_vm._v(" "),_c('f7-pages',[_c('jb-trending')],1)],1),_vm._v(" "),_c('f7-view',{attrs:{"id":"profile_view","tab":"","dynamic-navbar":true}},[_c('f7-navbar',[_c('f7-nav-center',[_vm._v("PROFILE")]),_vm._v(" "),_c('f7-nav-right',[_c('f7-link',{attrs:{"href":"/buy_credits/","data-view":"#profile_view"}},[_c('img',{staticClass:"coins_icon"})])],1)],1),_vm._v(" "),_c('f7-pages',[_c('jb-profile')],1)],1)],1),_vm._v(" "),_c('f7-toolbar',{attrs:{"tabbar":""}},[_c('f7-link',{attrs:{"active":"","tab-link":"#home_view"}},[_c('img',{staticClass:"home_icon"})]),_vm._v(" "),_c('f7-link',{attrs:{"tab-link":"#trending_view"}},[_c('img',{staticClass:"trending_icon"})]),_vm._v(" "),_c('f7-link',{attrs:{"tab-link":"#profile_view"}},[_c('img',{staticClass:"profile_icon"})])],1)],1)],1)}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('f7-views',{attrs:{"tabbar-through":"","navbar-through":""}},[_c('f7-tabs',{attrs:{"animated":""}},[_c('f7-view',{attrs:{"id":"home_view","tab":"","active":"","dynamic-navbar":true}},[_c('f7-navbar',[_c('f7-nav-center',[_c('span',{staticClass:"jukebox_text"},[_vm._v("JUKEBOX")])]),_vm._v(" "),_c('f7-nav-right',[_c('f7-link',{attrs:{"href":"/buy_credits/","data-view":"#home_view"}},[_c('img',{staticClass:"coins_icon"})])],1)],1),_vm._v(" "),_c('f7-pages',[_c('jb-home')],1)],1),_vm._v(" "),_c('f7-view',{attrs:{"id":"trending_view","tab":"","dynamic-navbar":true}},[_c('f7-navbar',[_c('f7-nav-center',[_c('span',{staticClass:"jukebox_text"},[_vm._v("JUKEBOX")])]),_vm._v(" "),_c('f7-nav-right',[_c('f7-link',{attrs:{"href":"/buy_credits/","data-view":"#trending_view"}},[_c('img',{staticClass:"coins_icon"})])],1)],1),_vm._v(" "),_c('f7-pages',[_c('jb-trending')],1)],1),_vm._v(" "),_c('f7-view',{attrs:{"id":"profile_view","tab":"","dynamic-navbar":true}},[_c('f7-navbar',[_c('f7-nav-center',[_vm._v("PROFILE")]),_vm._v(" "),_c('f7-nav-right',[_c('f7-link',{attrs:{"href":"/buy_credits/","data-view":"#profile_view"}},[_c('img',{staticClass:"coins_icon"})])],1)],1),_vm._v(" "),_c('f7-pages',[_c('jb-profile')],1)],1)],1),_vm._v(" "),_c('f7-toolbar',{attrs:{"tabbar":"","labels":""}},[_c('f7-link',{attrs:{"active":"","tab-link":"#home_view"}},[_c('img',{staticClass:"home_icon"}),_vm._v(" "),_c('span',{staticClass:"tabbar-label"},[_vm._v("Home")])]),_vm._v(" "),_c('f7-link',{attrs:{"tab-link":"#trending_view"}},[_c('img',{staticClass:"trending_icon"}),_vm._v(" "),_c('span',{staticClass:"tabbar-label"},[_vm._v("Trending")])]),_vm._v(" "),_c('f7-link',{attrs:{"tab-link":"#profile_view"}},[_c('img',{staticClass:"profile_icon"}),_vm._v(" "),_c('span',{staticClass:"tabbar-label"},[_vm._v("Profile")])])],1)],1)],1)}
 __vue__options__.staticRenderFns = []
 __vue__options__._scopeId = "data-v-65263fec"
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
@@ -27997,6 +27997,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   }
 })()}
 },{"../components/FancyBlockTitle.vue":7,"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],10:[function(require,module,exports){
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".category__title_font[data-v-40a8eab8] {\n  font-size: 40px;\n} \n.popular_clips__content_center[data-v-40a8eab8] {\n  text-align: center;\n  align-items: center\n}\n.popular_clips__content_center p[data-v-40a8eab8] {\n  margin: 0px;\n}\n.popular_clips__title_black[data-v-40a8eab8] {\n  color: black;\n}\n.popular_clips__image-block[data-v-40a8eab8] {\n  position: relative;\n}\n.play_button[data-v-40a8eab8] {\n  width: 50px;\n  height: 50px;\n  content: url(./img/icons/play.png);\n  position: absolute;\n  bottom: 10%;\n  right: 10%;    \n}")
 ;(function(){
 'use strict';
 
@@ -28020,56 +28021,81 @@ exports.default = {
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',[_c('jb-fancy-block-title',{attrs:{"title":"Hello world!","isFill":true}})],1)}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',[_c('f7-searchbar',{attrs:{"cancel-link":"Cancel","placeholder":"Search clips","clear-button":true}}),_vm._v(" "),_c('f7-block-title',[_vm._v("POPULAR CLIPS")]),_vm._v(" "),_c('f7-block',[_c('f7-grid',{staticClass:"popular_clips__content_center"},[_c('f7-col',{attrs:{"width":"33"}},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres1.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button"})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("Crazy in Love")]),_vm._v(" "),_c('p',[_vm._v("Beyonce")])]),_vm._v(" "),_c('f7-col',{attrs:{"width":"33"}},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres2.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button"})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("Just Dance")]),_vm._v(" "),_c('p',[_vm._v("Lady Gaga")])]),_vm._v(" "),_c('f7-col',{attrs:{"width":"33"}},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres3.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button"})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("All Falls Down")]),_vm._v(" "),_c('p',[_vm._v("KanYe West")])])],1)],1),_vm._v(" "),_c('jb-fancy-block-title',{attrs:{"title":"Categories"}}),_vm._v(" "),_c('f7-block',[_c('f7-list',{attrs:{"media-list":""}},[_c('f7-list-item',{staticClass:"category__title_font",attrs:{"link":"#","media":"<img width='100px' src='./img/data/cat_imgres1.png'>","title":"Hip Hop","subtitle":"10 Artists"}}),_vm._v(" "),_c('f7-list-item',{staticClass:"category__title_font",attrs:{"link":"#","media":"<img width='100px' src='./img/data/cat_imgres2.png'>","title":"Pop","subtitle":"10 Artists"}}),_vm._v(" "),_c('f7-list-item',{staticClass:"category__title_font",attrs:{"link":"#","media":"<img width='100px' src='./img/data/cat_imgres3.png'>","title":"R&B","subtitle":"10 Clips"}})],1)],1)],1)}
 __vue__options__.staticRenderFns = []
 __vue__options__._scopeId = "data-v-40a8eab8"
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
   module.hot.accept()
+  module.hot.dispose(__vueify_style_dispose__)
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-40a8eab8", __vue__options__)
   } else {
     hotAPI.rerender("data-v-40a8eab8", __vue__options__)
   }
 })()}
-},{"../components/FancyBlockTitle.vue":7,"vue":5,"vue-hot-reload-api":4}],11:[function(require,module,exports){
+},{"../components/FancyBlockTitle.vue":7,"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],11:[function(require,module,exports){
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".profile__logo_img {\n  max-width: 100%;\n  border-radius: 50%;\n}\n.profile__header_content_center {\n  text-align: center;\n  align-items: center\n}\n.profile__header_content_center p {\n  margin: 0px;\n  font-size: 20px;\n}\n\n.profile__text_bold {\n  font-weight: 600;\n}")
 ;(function(){
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = {};
+
+var _FancyBlockTitle = require('../components/FancyBlockTitle.vue');
+
+var _FancyBlockTitle2 = _interopRequireDefault(_FancyBlockTitle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  components: {
+    'jb-fancy-block-title': _FancyBlockTitle2.default
+  }
+};
 })()
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',[_c('span',[_vm._v("Profile")])])}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',[_c('f7-block',[_c('f7-grid',{staticClass:"profile__header_content_center"},[_c('f7-col',{attrs:{"width":"33"}},[_c('p',{staticClass:"profile__text_bold"},[_vm._v("DAMOLA")])]),_vm._v(" "),_c('f7-col',{attrs:{"width":"33"}},[_c('img',{staticClass:"profile__logo_img",attrs:{"src":"./img/data/user_damola.png"}})]),_vm._v(" "),_c('f7-col',{attrs:{"width":"33"}},[_c('p',[_vm._v("BALANCE")]),_vm._v(" "),_c('p',{staticClass:"profile__text_bold"},[_vm._v("50 Coins")])])],1)],1),_vm._v(" "),_c('jb-fancy-block-title',{attrs:{"title":"My Clips"}}),_vm._v(" "),_c('f7-block',[_c('f7-list',{attrs:{"media-list":""}},[_c('f7-list-item',{attrs:{"link":"#","media":"<img width='80' src='./img/data/imgres1.png'>","title":"Started From the Bottom","subtitle":"Drake"}}),_vm._v(" "),_c('f7-list-item',{attrs:{"link":"#","media":"<img width='80' src='./img/data/imgres2.png'>","title":"Just Dance","subtitle":"Lady Gaga"}}),_vm._v(" "),_c('f7-list-item',{attrs:{"link":"#","media":"<img width='80' src='./img/data/imgres3.png'>","title":"Crazy in Love","subtitle":"Beyonce"}})],1)],1)],1)}
 __vue__options__.staticRenderFns = []
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
   module.hot.accept()
+  module.hot.dispose(__vueify_style_dispose__)
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-22258c18", __vue__options__)
   } else {
     hotAPI.rerender("data-v-22258c18", __vue__options__)
   }
 })()}
-},{"vue":5,"vue-hot-reload-api":4}],12:[function(require,module,exports){
+},{"../components/FancyBlockTitle.vue":7,"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],12:[function(require,module,exports){
 ;(function(){
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = {};
+
+var _FancyBlockTitle = require('../components/FancyBlockTitle.vue');
+
+var _FancyBlockTitle2 = _interopRequireDefault(_FancyBlockTitle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  components: {
+    'jb-fancy-block-title': _FancyBlockTitle2.default
+  }
+};
 })()
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',[_c('span',[_vm._v("Trending")])])}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',[_c('jb-fancy-block-title',{attrs:{"title":"Trending","isFill":true}}),_vm._v(" "),_c('f7-block',[_c('f7-list',{attrs:{"media-list":""}},[_c('f7-list-item',{attrs:{"link":"#","media":"<img width='50px' src='./img/icons/circled_chevron_up.png'>","title":"Bad Blood","subtitle":"Taylor Swift"}}),_vm._v(" "),_c('f7-list-item',{attrs:{"link":"#","media":"<img width='50px' src='./img/icons/circled_chevron_up.png'>","title":"Started From the Bottom","subtitle":"Drake"}}),_vm._v(" "),_c('f7-list-item',{attrs:{"link":"#","media":"<img width='50px' src='./img/icons/circled_chevron_down.png'>","title":"Just Dance","subtitle":"Lady Gaga"}}),_vm._v(" "),_c('f7-list-item',{attrs:{"link":"#","media":"<img width='50px' src='./img/icons/circled_chevron_up.png'>","title":"Bad and Boujee","subtitle":"Migos"}}),_vm._v(" "),_c('f7-list-item',{attrs:{"link":"#","media":"<img width='50px' src='./img/icons/circled_chevron_down.png'>","title":"All Falls Down","subtitle":"KanYe West"}}),_vm._v(" "),_c('f7-list-item',{attrs:{"link":"#","media":"<img width='50px' src='./img/icons/circled_chevron_up.png'>","title":"Crazy in Love","subtitle":"Beyonce"}}),_vm._v(" "),_c('f7-list-item',{attrs:{"link":"#","media":"<img width='50px' src='./img/icons/circled_chevron_down.png'>","title":"We Gon Be Alright!","subtitle":"Kendrick Lamar"}})],1)],1)],1)}
 __vue__options__.staticRenderFns = []
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -28081,7 +28107,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.rerender("data-v-dde98d2c", __vue__options__)
   }
 })()}
-},{"vue":5,"vue-hot-reload-api":4}],13:[function(require,module,exports){
+},{"../components/FancyBlockTitle.vue":7,"vue":5,"vue-hot-reload-api":4}],13:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();

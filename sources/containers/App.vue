@@ -22,7 +22,7 @@
 
         <f7-view id="trending_view" tab :dynamic-navbar="true">
           <f7-navbar>
-            <f7-nav-center>TRENDING</f7-nav-center>
+            <f7-nav-center><span class="jukebox_text">JUKEBOX</span></f7-nav-center>
             <f7-nav-right>
               <f7-link href="/buy_credits/" data-view="#trending_view">
                 <img class="coins_icon">
@@ -50,15 +50,18 @@
         </f7-view>
 
       </f7-tabs>
-      <f7-toolbar tabbar>
+      <f7-toolbar tabbar labels>
         <f7-link active tab-link="#home_view">
           <img class="home_icon">
+          <span class="tabbar-label">Home</span>
         </f7-link>
         <f7-link tab-link="#trending_view">
           <img class="trending_icon">
+          <span class="tabbar-label">Trending</span>
         </f7-link>
         <f7-link tab-link="#profile_view">
           <img class="profile_icon">
+          <span class="tabbar-label">Profile</span>
         </f7-link>
       </f7-toolbar>
 

@@ -18,7 +18,8 @@ export default {
   .fancy div {
     display: inline-block;
     position: relative;
-    padding: 10px;
+    padding: 5px;
+    font-size: 20px;
     border-radius: 15px;
     color: #ff2d55;
     text-transform: capitalize;
@@ -27,6 +28,8 @@ export default {
       color: white;
       background: #ff2d55;
       text-transform: uppercase;
+      padding: 10px;
+      font-size: 14px;
   } 
   .fancy div:before,
   .fancy div:after {
