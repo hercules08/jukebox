@@ -27958,7 +27958,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.rerender("data-v-65263fec", __vue__options__)
   }
 })()}
-},{"./Home.vue":10,"./Profile.vue":11,"./Trending.vue":12,"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],9:[function(require,module,exports){
+},{"./Home.vue":10,"./Profile.vue":12,"./Trending.vue":13,"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],9:[function(require,module,exports){
 var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".buy_credits__logo[data-v-4cb30e8e] {\n  text-align: center;\n}\n.button__color_5credit[data-v-4cb30e8e] {\n  background: #C644FC !important;\n}\n\n.button__color_10credit[data-v-4cb30e8e] {\n  background: #EF4DB6 !important;\n}\n\n.button__color_20credit[data-v-4cb30e8e] {\n  background: #FF2D55 !important;\n}\n\n.coins_icon[data-v-4cb30e8e] {\n  width: 100px;\n  height: 100px;\n  content: url(./img/icons/coins.png);     \n}")
 ;(function(){
 'use strict';
@@ -28021,7 +28021,7 @@ exports.default = {
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',{attrs:{"name":"home"}},[_c('f7-searchbar',{attrs:{"cancel-link":"Cancel","placeholder":"Search clips","clear-button":true}}),_vm._v(" "),_c('f7-block-title',[_vm._v("POPULAR CLIPS")]),_vm._v(" "),_c('f7-block',[_c('div',{staticClass:"swiper-container swiper-3 swiper-init",attrs:{"data-swiper":"{\"slidesPerView\": \"3\"}"}},[_c('div',{staticClass:"swiper-wrapper popular_clips__content_center"},[_c('div',{staticClass:"swiper-slide"},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres1.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button"})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("Crazy in Love")]),_vm._v(" "),_c('p',[_vm._v("Beyonce")])]),_vm._v(" "),_c('div',{staticClass:"swiper-slide"},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres2.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button"})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("Just Dance")]),_vm._v(" "),_c('p',[_vm._v("Lady Gaga")])]),_vm._v(" "),_c('div',{staticClass:"swiper-slide"},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres3.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button"})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("All Falls Down")]),_vm._v(" "),_c('p',[_vm._v("KanYe West")])]),_vm._v(" "),_c('div',{staticClass:"swiper-slide"},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres1.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button"})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("Crazy in Love")]),_vm._v(" "),_c('p',[_vm._v("Beyonce")])]),_vm._v(" "),_c('div',{staticClass:"swiper-slide"},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres2.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button"})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("Just Dance")]),_vm._v(" "),_c('p',[_vm._v("Lady Gaga")])]),_vm._v(" "),_c('div',{staticClass:"swiper-slide"},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres3.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button"})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("All Falls Down")]),_vm._v(" "),_c('p',[_vm._v("KanYe West")])])])])]),_vm._v(" "),_c('jb-fancy-block-title',{attrs:{"title":"Categories"}}),_vm._v(" "),_c('f7-block',[_c('f7-list',{attrs:{"media-list":""}},[_c('f7-list-item',{staticClass:"category__title_font",attrs:{"link":"#","media":"<img width='80px' src='./img/data/cat_imgres1.png'>","title":"Hip Hop","subtitle":"10 Artists"}}),_vm._v(" "),_c('f7-list-item',{staticClass:"category__title_font",attrs:{"link":"#","media":"<img width='80px'src='./img/data/cat_imgres2.png'>","title":"Pop","subtitle":"10 Artists"}}),_vm._v(" "),_c('f7-list-item',{staticClass:"category__title_font",attrs:{"link":"#","media":"<img width='80px' src='./img/data/cat_imgres3.png'>","title":"R&B","subtitle":"10 Clips"}})],1)],1)],1)}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',{attrs:{"name":"home"}},[_c('f7-searchbar',{attrs:{"cancel-link":"Cancel","placeholder":"Search clips","clear-button":true}}),_vm._v(" "),_c('f7-block-title',[_vm._v("POPULAR CLIPS")]),_vm._v(" "),_c('f7-block',[_c('div',{staticClass:"swiper-container swiper-3 swiper-init",attrs:{"data-swiper":"{\"slidesPerView\": \"3\"}"}},[_c('div',{staticClass:"swiper-wrapper popular_clips__content_center"},[_c('div',{staticClass:"swiper-slide"},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres1.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button",attrs:{"href":"/music_player/"}})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("Crazy in Love")]),_vm._v(" "),_c('p',[_vm._v("Beyonce")])]),_vm._v(" "),_c('div',{staticClass:"swiper-slide"},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres2.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button",attrs:{"href":"/music_player/"}})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("Just Dance")]),_vm._v(" "),_c('p',[_vm._v("Lady Gaga")])]),_vm._v(" "),_c('div',{staticClass:"swiper-slide"},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres3.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button",attrs:{"href":"/music_player/"}})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("All Falls Down")]),_vm._v(" "),_c('p',[_vm._v("KanYe West")])]),_vm._v(" "),_c('div',{staticClass:"swiper-slide"},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres1.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button",attrs:{"href":"/music_player/"}})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("Crazy in Love")]),_vm._v(" "),_c('p',[_vm._v("Beyonce")])]),_vm._v(" "),_c('div',{staticClass:"swiper-slide"},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres2.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button",attrs:{"href":"/music_player/"}})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("Just Dance")]),_vm._v(" "),_c('p',[_vm._v("Lady Gaga")])]),_vm._v(" "),_c('div',{staticClass:"swiper-slide"},[_c('div',{staticClass:"popular_clips__image-block"},[_c('img',{attrs:{"width":"100%","src":"./img/data/pop_imgres3.png"}}),_vm._v(" "),_c('f7-link',{staticClass:"play_button",attrs:{"href":"/music_player/"}})],1),_vm._v(" "),_c('p',{staticClass:"popular_clips__title_black"},[_vm._v("All Falls Down")]),_vm._v(" "),_c('p',[_vm._v("KanYe West")])])])])]),_vm._v(" "),_c('jb-fancy-block-title',{attrs:{"title":"Categories"}}),_vm._v(" "),_c('f7-block',[_c('f7-list',{attrs:{"media-list":""}},[_c('f7-list-item',{staticClass:"category__title_font",attrs:{"link":"#","media":"<img width='80px' src='./img/data/cat_imgres1.png'>","title":"Hip Hop","subtitle":"10 Artists"}}),_vm._v(" "),_c('f7-list-item',{staticClass:"category__title_font",attrs:{"link":"#","media":"<img width='80px'src='./img/data/cat_imgres2.png'>","title":"Pop","subtitle":"10 Artists"}}),_vm._v(" "),_c('f7-list-item',{staticClass:"category__title_font",attrs:{"link":"#","media":"<img width='80px' src='./img/data/cat_imgres3.png'>","title":"R&B","subtitle":"10 Clips"}})],1)],1)],1)}
 __vue__options__.staticRenderFns = []
 __vue__options__._scopeId = "data-v-40a8eab8"
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
@@ -28036,6 +28036,102 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   }
 })()}
 },{"../components/FancyBlockTitle.vue":7,"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],11:[function(require,module,exports){
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".player {\n  width: 100%;\n  height: 55%;\n}\n.action_button {\n  position: absolute;\n  bottom: 6px;\n  width: 100%;\n}\n.player__controls {\n  color: #6d6d72;\n  text-align: center;\n  position: relative;\n  width: 100%;\n  height: 45%;\n}\n.player__controls:before {\n  content: \"\";\n  position: fixed;\n  left: 0;\n  right: 0;\n  z-index: -1;\n  display: block;\n  background-image: url('./img/player_controls.png');\n    width: 100%;\n    height: 35%;\n  -webkit-filter: blur(85px);\n  -moz-filter: blur(85px);\n  -o-filter: blur(85px);\n  -ms-filter: blur(85px);\n  filter: blur(85px);\n  opacity: 0.75;\n}\n.player__background {\n  background-position: top;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n\n.play_icon {\n  margin: 10px;\n  width: 50px;\n  height: 50px;\n  content: url(./img/icons/play_control.png);    \n}\n\n.pause_icon {\n  margin: 10px;\n  width: 50px;\n  height: 50px;\n  content: url(./img/icons/pause_control.png);\n}\n\n.sound_icon {\n  margin-top: 6px;\n  width: 20px;\n  height: 20px;\n  content: url(./img/icons/sound.png);\n}")
+;(function(){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  data: function data() {
+    return {
+      timeProgress: 0,
+      currentTime: '0:00',
+      leftTime: '0:00',
+      isPlay: false
+    };
+  },
+
+  computed: {
+    classPlayPauseButton: function classPlayPauseButton() {
+      return {
+        play_icon: !this.isPlay,
+        pause_icon: this.isPlay
+      };
+    }
+  },
+  methods: {
+    onSendButtonClick: function onSendButtonClick() {
+      var _this = this;
+
+      var buttons1 = [{
+        text: 'Send Text or iMessage',
+        onClick: function onClick() {
+          _this.$f7.alert('Send Text or iMessage');
+        }
+      }, {
+        text: 'Send E-mail',
+        onClick: function onClick() {
+          _this.$f7.alert('Send E-mail');
+        }
+      }];
+      var buttons2 = [{
+        text: 'Cancel',
+        color: 'red'
+      }];
+      var groups = [buttons1, buttons2];
+      this.$f7.actions('#send_button', groups);
+    },
+    onPlayPauseClick: function onPlayPauseClick() {
+      var video = this.$$('#video')[0];
+      if (video.paused === true) {
+        video.play();
+        this.isPlay = true;
+      } else {
+        video.pause();
+        this.isPlay = false;
+      }
+    },
+    onTimeUpdate: function onTimeUpdate() {
+      var video = this.$$('#video')[0];
+      this.timeProgress = video.currentTime * 100 / video.duration;
+
+      var minutes = Math.floor(video.currentTime / 60);
+      var seconds = Math.floor(video.currentTime) - minutes * 60;
+      var zero = seconds > 9 ? '' : '0';
+      this.currentTime = minutes + ':' + zero + seconds;
+      var leftTime = video.duration - video.currentTime;
+
+      minutes = Math.floor(leftTime / 60);
+      seconds = Math.floor(leftTime) - minutes * 60;
+      zero = seconds > 9 ? '' : '0';
+      this.leftTime = minutes + ':' + zero + seconds;
+    },
+    onVolumeChange: function onVolumeChange(value) {
+      var video = this.$$('#video')[0];
+      video.volume = value / 100;
+    }
+  }
+};
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
+var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
+if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('f7-page',[_c('f7-navbar',[_c('f7-nav-left',[_c('f7-link',{attrs:{"back":""}},[_c('img',{staticClass:"back_icon"})])],1),_vm._v(" "),_c('f7-nav-center',[_c('span',{staticClass:"jukebox_text"},[_vm._v("JUKEBOX")])])],1),_vm._v(" "),_c('div',{staticClass:"player player__background",staticStyle:{"background-image":"url('./img/data/player_imgres1.png')"}},[_c('video',{attrs:{"id":"video","width":"0","height":"0"},on:{"timeupdate":_vm.onTimeUpdate}},[_c('source',{attrs:{"src":"media/spl_024.mp3","type":"audio/mp3"}})])]),_vm._v(" "),_c('div',{staticClass:"player__controls player__background"},[_c('f7-progressbar',{attrs:{"progress":_vm.timeProgress}}),_vm._v(" "),_c('f7-grid',{attrs:{"no-gutter":""}},[_c('f7-col',{attrs:{"width":"10"}},[_vm._v(_vm._s(_vm.currentTime))]),_vm._v(" "),_c('f7-col',{attrs:{"width":"80"}}),_vm._v(" "),_c('f7-col',{attrs:{"width":"10"}},[_vm._v(_vm._s(_vm.leftTime))])],1),_vm._v(" "),_c('span',{staticStyle:{"font-size":"20px","font-weight":"400","color":"black"}},[_vm._v("\n        Crazy in Love\n      ")]),_c('br'),_vm._v(" "),_c('span',[_vm._v("\n        Beyonce\n      ")]),_c('br'),_vm._v(" "),_c('f7-link',{attrs:{"id":"play-pause"},on:{"click":_vm.onPlayPauseClick}},[_c('img',{class:_vm.classPlayPauseButton})]),_vm._v(" "),_c('f7-grid',{attrs:{"no-gutter":""}},[_c('f7-col',{attrs:{"width":"20"}}),_vm._v(" "),_c('f7-col',{attrs:{"width":"10"}},[_c('f7-label',[_c('img',{staticClass:"sound_icon"})])],1),_vm._v(" "),_c('f7-col',{attrs:{"width":"50"}},[_c('f7-input',{attrs:{"type":"range","min":"0","max":"100","step":"1","value":"50"},on:{"input":_vm.onVolumeChange}})],1),_vm._v(" "),_c('f7-col',{attrs:{"width":"20"}})],1),_vm._v(" "),_c('f7-button',{staticClass:"action_button",attrs:{"id":"send_button","big":"","raised":"","fill":"","color":"blue"},on:{"click":_vm.onSendButtonClick}},[_vm._v("Send")])],1)],1)}
+__vue__options__.staticRenderFns = []
+if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  module.hot.dispose(__vueify_style_dispose__)
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-58c8bdb1", __vue__options__)
+  } else {
+    hotAPI.rerender("data-v-58c8bdb1", __vue__options__)
+  }
+})()}
+},{"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],12:[function(require,module,exports){
 var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".profile__logo_img {\n  max-width: 100%;\n  border-radius: 50%;\n}\n.profile__header_content_center {\n  text-align: center;\n  align-items: center\n}\n.profile__header_content_center p {\n  margin: 0px;\n  font-size: 20px;\n}\n\n.profile__text_bold {\n  font-weight: 600;\n}")
 ;(function(){
 'use strict';
@@ -28072,7 +28168,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.rerender("data-v-22258c18", __vue__options__)
   }
 })()}
-},{"../components/FancyBlockTitle.vue":7,"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],12:[function(require,module,exports){
+},{"../components/FancyBlockTitle.vue":7,"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],13:[function(require,module,exports){
 ;(function(){
 'use strict';
 
@@ -28107,7 +28203,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.rerender("data-v-dde98d2c", __vue__options__)
   }
 })()}
-},{"../components/FancyBlockTitle.vue":7,"vue":5,"vue-hot-reload-api":4}],13:[function(require,module,exports){
+},{"../components/FancyBlockTitle.vue":7,"vue":5,"vue-hot-reload-api":4}],14:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -28195,7 +28291,7 @@ var AppCordova = function () {
 var appCordova = new AppCordova();
 appCordova.initialize();
 
-},{"./containers/App.vue":8,"./routes":14,"framework7":2,"framework7-vue":1,"vue":5}],14:[function(require,module,exports){
+},{"./containers/App.vue":8,"./routes":15,"framework7":2,"framework7-vue":1,"vue":5}],15:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -28206,11 +28302,18 @@ var _BuyCredits = require('./containers/BuyCredits.vue');
 
 var _BuyCredits2 = _interopRequireDefault(_BuyCredits);
 
+var _MusicPlayer = require('./containers/MusicPlayer.vue');
+
+var _MusicPlayer2 = _interopRequireDefault(_MusicPlayer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = [{
   path: '/buy_credits/',
   component: _BuyCredits2.default
+}, {
+  path: '/music_player/',
+  component: _MusicPlayer2.default
 }];
 
-},{"./containers/BuyCredits.vue":9}]},{},[13]);
+},{"./containers/BuyCredits.vue":9,"./containers/MusicPlayer.vue":11}]},{},[14]);

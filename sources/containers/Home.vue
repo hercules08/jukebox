@@ -17,7 +17,7 @@
           <div class="swiper-slide">
             <div class="popular_clips__image-block">
               <img width="100%" src="./img/data/pop_imgres1.png" class="">
-              <f7-link class="play_button"></f7-link>
+              <f7-link href="/music_player/" class="play_button"></f7-link>
             </div>
             <p class="popular_clips__title_black">Crazy in Love</p>
             <p>Beyonce</p>
@@ -25,7 +25,7 @@
           <div class="swiper-slide">
             <div class="popular_clips__image-block">
               <img width="100%" src="./img/data/pop_imgres2.png" class="">
-              <f7-link class="play_button"></f7-link>
+              <f7-link href="/music_player/" class="play_button"></f7-link>
             </div>
             <p class="popular_clips__title_black">Just Dance</p>
             <p>Lady Gaga</p>              
@@ -33,7 +33,7 @@
           <div class="swiper-slide">
             <div class="popular_clips__image-block">
               <img width="100%" src="./img/data/pop_imgres3.png" class="">
-              <f7-link class="play_button"></f7-link>
+              <f7-link href="/music_player/" class="play_button"></f7-link>
             </div>
             <p class="popular_clips__title_black">All Falls Down</p>
             <p>KanYe West</p>              
@@ -41,7 +41,7 @@
           <div class="swiper-slide">
             <div class="popular_clips__image-block">
               <img width="100%" src="./img/data/pop_imgres1.png" class="">
-              <f7-link class="play_button"></f7-link>
+              <f7-link href="/music_player/" class="play_button"></f7-link>
             </div>
             <p class="popular_clips__title_black">Crazy in Love</p>
             <p>Beyonce</p>
@@ -49,7 +49,7 @@
           <div class="swiper-slide">
             <div class="popular_clips__image-block">
               <img width="100%" src="./img/data/pop_imgres2.png" class="">
-              <f7-link class="play_button"></f7-link>
+              <f7-link href="/music_player/" class="play_button"></f7-link>
             </div>
             <p class="popular_clips__title_black">Just Dance</p>
             <p>Lady Gaga</p>              
@@ -57,7 +57,7 @@
           <div class="swiper-slide">
             <div class="popular_clips__image-block">
               <img width="100%" src="./img/data/pop_imgres3.png" class="">
-              <f7-link class="play_button"></f7-link>
+              <f7-link href="/music_player/" class="play_button"></f7-link>
             </div>
             <p class="popular_clips__title_black">All Falls Down</p>
             <p>KanYe West</p>              
