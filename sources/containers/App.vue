@@ -6,7 +6,7 @@
       <f7-tabs animated>
 
         <f7-view id="home_view" tab active :dynamic-navbar="true">
-          <f7-navbar>
+          <f7-navbar class="bg-white">
             <f7-nav-center><span class="jukebox_text">JUKEBOX</span></f7-nav-center>
             <f7-nav-right>
               <f7-link href="/buy_credits/" data-view="#home_view">
@@ -21,7 +21,7 @@
         </f7-view>
 
         <f7-view id="trending_view" tab :dynamic-navbar="true">
-          <f7-navbar>
+          <f7-navbar class="bg-white">
             <f7-nav-center><span class="jukebox_text">JUKEBOX</span></f7-nav-center>
             <f7-nav-right>
               <f7-link href="/buy_credits/" data-view="#trending_view">
@@ -35,7 +35,7 @@
         </f7-view>
 
         <f7-view id="profile_view" tab :dynamic-navbar="true">
-          <f7-navbar>
+          <f7-navbar class="bg-white">
             <f7-nav-center>PROFILE</f7-nav-center>
             <f7-nav-right>
               <f7-link href="/buy_credits/" data-view="#profile_view">
@@ -50,7 +50,7 @@
         </f7-view>
 
       </f7-tabs>
-      <f7-toolbar tabbar labels>
+      <f7-toolbar tabbar labels class="bg-white">
         <f7-link active tab-link="#home_view">
           <img class="home_icon">
           <span class="tabbar-label">Home</span>

@@ -35,6 +35,7 @@
   },
   "homepage": "https://github.com/hercules08/jukebox#readme",
   "dependencies": {
+    "axios": "^0.16.1",
     "framework7": "^1.6.0",
     "framework7-vue": "^0.9.0",
     "lodash": "^4.17.4",

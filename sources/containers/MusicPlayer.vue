@@ -1,5 +1,5 @@
 <template>
-  <f7-page>
+  <f7-page class="bg-white">
     <f7-navbar>
       <f7-nav-left>
         <f7-link back>
@@ -43,6 +43,8 @@
           </f7-col>
           <f7-col width="50">
             <f7-input type="range" min="0" max="100" step="1" value="50" v-on:input="onVolumeChange"></f7-input>
+
+
           </f7-col>
           <f7-col width="20"></f7-col>
         </f7-grid>
@@ -139,7 +141,7 @@ export default {
 <style>
   .player {
     width: 100%;
-    height: 55%;
+    height: 50%;
   }
   .action_button {
     position: absolute;
@@ -151,7 +153,7 @@ export default {
     text-align: center;
     position: relative;
     width: 100%;
-    height: 45%;
+    height: 50%;
   }
   .player__controls:before {
     content: "";

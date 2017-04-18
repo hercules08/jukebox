@@ -1,5 +1,5 @@
 <template>
-  <f7-page>
+  <f7-page class="bg-white">
     <f7-block>
       <f7-grid class="profile__header_content_center">
         <f7-col width="33">
@@ -17,7 +17,6 @@
 
     <jb-fancy-block-title title="My Clips"></jb-fancy-block-title>
 
-    <f7-block>
       <f7-list media-list>
         <f7-list-item
           link="#"
@@ -39,7 +38,6 @@
         ></f7-list-item>
 
       </f7-list>
-    </f7-block>
 
   </f7-page>
 </template>

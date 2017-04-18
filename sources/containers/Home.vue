@@ -1,5 +1,5 @@
 <template>
-  <f7-page name="home">
+  <f7-page name="home" class="bg-white">
     <f7-searchbar
       cancel-link="Cancel"
       placeholder="Search clips"
@@ -70,7 +70,6 @@
       title="Categories"
     ></jb-fancy-block-title>
   
-    <f7-block>
       <f7-list media-list>
         <f7-list-item
           link="#"
@@ -97,7 +96,6 @@
         ></f7-list-item>
 
       </f7-list>    
-    </f7-block>
   </f7-page>
 </template>
 

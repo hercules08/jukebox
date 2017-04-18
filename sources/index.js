@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Framework7 from 'framework7';
 import Framework7Vue from 'framework7-vue';
-// import AppStore from './store/AppStore';
+import AppStore from './store/AppStore';
 import Routes from './routes';
 import App from './containers/App.vue';
 
@@ -29,8 +29,8 @@ class AppCordova {
         app: App,
       },
     });
+    AppStore.setF7(this.app.$f7);
   }
-
   // deviceready Event Handler
   //
   // Bind any cordova events here. Common events are:

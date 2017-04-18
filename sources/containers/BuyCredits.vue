@@ -1,5 +1,5 @@
 <template>
-  <f7-page>
+  <f7-page class="bg-white">
     <f7-navbar>
     <f7-nav-left sliding>
       <f7-link back>
