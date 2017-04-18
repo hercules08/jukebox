@@ -36,7 +36,7 @@
 
         <f7-view id="profile_view" tab :dynamic-navbar="true">
           <f7-navbar class="bg-white">
-            <f7-nav-center>PROFILE</f7-nav-center>
+            <f7-nav-center><span class="jukebox_text">PROFILE</span></f7-nav-center>
             <f7-nav-right>
               <f7-link href="/buy_credits/" data-view="#profile_view">
                 <img class="coins_icon">

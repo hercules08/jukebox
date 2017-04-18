@@ -51,7 +51,8 @@ export default {
   },
 };
 </script>
-<style type="text/css">
+<style scoped>
+
   .profile__logo_img {
     max-width: 100%;
     border-radius: 50%;

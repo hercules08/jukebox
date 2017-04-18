@@ -138,7 +138,11 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
+  .jukebox_text {
+    letter-spacing: 4px;
+  }
+
   .player {
     width: 100%;
     height: 50%;
