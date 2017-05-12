@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/JukeBox/css/framework7-icons.css" rel="stylesheet" />
+    <link href="~/Content/JukeBox/css/framework7.ios.colors.min.css" rel="stylesheet" />
+    <link href="~/Content/JukeBox/css/framework7-icons.css" rel="stylesheet" />
+    <link href="~/Content/JukeBox/css/my-app.css" rel="stylesheet" />
+    <link href="~/Content/JukeBox/css/my-app-phone.css" media="(max-width: 480px)" rel="stylesheet" />
+
+    <style type="text/css">
+        #player {
+            padding: 10px;
+            border: 5px solid black;
+            border-radius: 15px;
+            box-shadow: 10px 10px 5px gray;
+            box-sizing: content-box;
+            max-width: 455px;
+        }
+
+        #positionview {
+            width: 400px;
+            height: 40px;
+        }
+
+        #transportbar {
+            height: 20px;
+            width: 300px;
+            position: relative;
+            float: left;
+            border: 2px solid black;
+        }
+
+        #position {
+            background: #D7BC28;
+            height: 20px;
+            width: 0px;
+        }
+
+        #time {
+            position: relative;
+            float: right;
+        }
+
+        #video {
+            position: relative;
+            float: left;
+            padding: 0;
+            margin: 0;
+        }
+
+        #volumecontrol {
+            position: relative;
+            float: right;
+            padding-left: 20px;
+        }
+
+        #volumebar {
+            position: relative;
+            height: 225px;
+            width: 25px;
+            border: 2px solid black;
+        }
+
+        #volume {
+            position: absolute;
+            height: 225px;
+            width: 25px;
+            background: #006;
+        }
+
+            #volume.disabled {
+                background: #ccc;
+            }
+
+        #controls div {
+            display: inline;
+        }
+
+            #controls div input {
+                background: url(buttons.png) no-repeat top left;
+                border: none;
+                height: 60px;
+                width: 60px;
+                padding: 5px;
+                display: inline-block;
+            }
+
+            #controls div #repeat {
+                background-position: 0 -901px;
+            }
+
+            #controls div #stop {
+                background-position: 0 -301px;
+            }
+
+            #controls div #louder {
+                background-position: 0 -451px;
+            }
+
+            #controls div #quieter {
+                background-position: 0 -601px;
+            }
+
+            #controls div #mute {
+                background-position: 0 -751px;
+            }
+    </style>
+    <script src="~/Content/JukeBox/js/cordova.js" type="text/javascript"></script>
+</head>
+<body class="theme-pink">
+    <div class="views tabs toolbar-through">
+
+        <div id="view-1" class="view view-main tab active">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center sliding bolder">J U K E B O X</div>
+                    <div class="right">
+                        <a href="#" class="link icon-only">
+                            <i class="f7-icons">money_dollar_fill</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            @RenderBody()
+        </div>
+        <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+                <a href="#view-1" class="tab-link active"> <i class="f7-icons">list</i><span class="tabbar-label">Home</span></a>
+                <a href="#view-2" class="tab-link"><i class="f7-icons">radio</i><span class="tabbar-label">Trending</span></a>
+                <a href="#view-3" class="tab-link"> <i class="icon tabbar-demo-icon-3"><span class="badge bg-red">4</span></i><span class="tabbar-label">Upload</span></a>
+                <a href="#view-4" class="tab-link"> <i class="f7-icons">person</i><span class="tabbar-label">Profile</span></a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript">
+        video = document.getElementsByTagName("video")[0];
+        position = document.getElementById("position");
+        curTime = document.getElementById("curTime");
+        duration = document.getElementById("duration");
+        volume = document.getElementById("volume");
+        vol = document.getElementById("vol");
+        play = document.getElementById("play");
+        repeat = document.getElementById("repeat");
+        stop = document.getElementById("stop");
+        louder = document.getElementById("louder");
+        quieter = document.getElementById("quieter");
+        mute = document.getElementById("mute");
+
+        video.addEventListener("loadedmetadata", init, false);
+
+        function init(evt) {
+            duration.innerHTML = video.duration.toFixed(2);
+            vol.innerHTML = video.volume.toFixed(2);
+        }
+
+        video.addEventListener("timeupdate", curTimeUpdate, false);
+
+        function curTimeUpdate(evt) {
+            curTime.innerHTML = video.currentTime.toFixed(2);
+            position.style.width = 300 * video.currentTime / video.duration + "px";
+        }
+
+        video.addEventListener("volumechange", dispVol, false);
+
+        function dispVol(evt) {
+            vol.innerHTML = video.volume.toFixed(2);
+        }
+
+        play.addEventListener("click", togglePlay, false);
+
+        function togglePlay(evt) {
+            if (video.paused == false) {
+                video.pause();
+                play.style.backgroundPosition = "0 0";
+            } else {
+                video.play();
+                play.style.backgroundPosition = "0 -151px";
+            }
+        }
+
+        repeat.addEventListener("click", rewind, false);
+
+        function rewind(evt) {
+            video.currentTime = video.currentTime - 2.0;
+        }
+
+        stop.addEventListener("click", restart, false);
+
+        function restart(evt) {
+            video.pause();
+            play.style.backgroundPosition = "0 0";
+            video.currentTime = 0;
+        }
+
+        louder.addEventListener("click", volInc, false);
+
+        function volInc(evt) {
+            changeVolume(video.volume + 0.1);
+        }
+
+        quieter.addEventListener("click", volDec, false);
+
+        function volDec(evt) {
+            changeVolume(video.volume - 0.1);
+        }
+
+        mute.addEventListener("click", toggleMute, false);
+
+        function toggleMute(evt) {
+            video.muted = !video.muted;
+            if (video.muted) {
+                volume.className = 'disabled';
+            } else {
+                volume.className = '';
+            }
+        }
+
+        function changeVolume(changeTo) {
+            if (video.muted) {
+                toggleMute();
+            }
+            if (changeTo > 1.0) {
+                changeTo = 1.0;
+            } else if (changeTo < 0.0) {
+                changeTo = 0.0;
+            }
+            volume.style.height = 225 * changeTo + 'px';
+            volume.style.marginTop = 225 - (225 * changeTo) + 'px';
+            video.volume = changeTo;
+        }
+    </script>
+</body>
+</html>
